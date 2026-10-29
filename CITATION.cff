@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "AlignCal"
+abstract: ""Estimate relative sensor alignment from flight time series, reporting which alignment degrees of freedom the observed motion actually EXCITES before producing any estimate - a vehicle that never rotated about an axis cannot have its alignment about that axis estimated at any data volume. Distinct from P026 WahbaKit which solves single-epoch attitude from vector pairs and from P017 EstimKit which is general estimation: this is the time-series relative alignment problem whose failure mode is unexcited degrees of freedom. Baseline 1 batch least-squares Wahba-type solution over the full record on the observable subspace only, with the observability Gramian computed per degree of freedom and unobservable directions named as the rotation axes they correspond to; baseline 2 recursive Kalman/MEKF alignment giving the same answer online, scored against the batch reference. Learned estimator for the short-record case scored on error against known injected misalignment AND separately inside the unobservable subspace, where the expected result is a confident estimate for a degree of freedom the data cannot support.""
+type: software
+authors:
+  - family-names: "Acharya"
+    given-names: "Om"
+    alias: "OmAcharya-avtr"
+repository-code: "https://github.com/OmAcharya-avtr/aligncal"
+license: "Apache-2.0"
+version: "0.1.0"
+date-released: "2026-08-30"
+keywords:
+  - aerospace
+  - aerospace-gnc
